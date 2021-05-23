@@ -55,9 +55,10 @@ declare module "csgo-cdn" {
 
     constructor(steamUser: any, options?: Partial<CsgoCdnOptions>);
 
-    getItemNameURL(marketHashName: string, phase?: CsgoCdnSkinPhases): string | undefined | null;
-    getStickerURL(stickerName: string, large?: boolean): string | undefined | null;
-    getWeaponURL(defindex: number, paintindex: number): string | undefined | null;
+    getItemNameURL(marketHashName: string, phase?: CsgoCdnSkinPhases): string | undefined;
+    getStickerURL(stickerName: string, large?: boolean): string | undefined;
+    getWeaponURL(defindex: number, paintindex: number): string | undefined;
+    getPatchURL(marketHashName: string): string | undefined;
 
     on( event: 'ready', listener: () => void ): this;
   }
