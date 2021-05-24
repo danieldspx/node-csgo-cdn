@@ -1,5 +1,5 @@
 {
-  "name": "csgo-cdn",
+  "name": "updated-csgo-cdn",
   "version": "1.2.0",
   "description": "Retrieves the Steam CDN URLs for CS:GO Item Images",
   "main": "index.js",
